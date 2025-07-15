@@ -1,0 +1,11 @@
+Unless specified otherwise, every output message must end with a newline character
+and be displayed to the standard output.
+
+C++11 (and derived forms) and Boost libraries are forbidden. 
+*printf(), *alloc() and free()
+STL (Standard Template Library) only for modules 08 and 09 (no containers nor algorithms)
+
+using namespace std;  ❌ forbidden (except when allowed)  
+class A {  
+   friend class B;  ❌ forbidden always 
+}; 
