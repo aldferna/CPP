@@ -25,8 +25,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
-
-#destruye al reves
-#los totales estan mal (mirar log)
-#en dopisit y witdrawal tampoco actualizo contadores globales
