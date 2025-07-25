@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 15:37:07 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/24 12:33:30 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/07/25 13:59:17 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,9 +87,7 @@ void Account::displayStatus() const
 
 void Account::makeDeposit( int deposit )
 {
-    int p_amount;
-
-    p_amount = _amount;
+    int p_amount = _amount;
     _amount += deposit;
     _nbDeposits++;
     _totalAmount += deposit;
@@ -107,9 +105,7 @@ int Account::checkAmount(void) const
 
 bool Account::makeWithdrawal( int withdrawal )
 {
-    int p_amount;
-
-    p_amount = _amount;
+    int p_amount = _amount;
     _displayTimestamp();
     if ((checkAmount() - withdrawal) >= 0)
     {

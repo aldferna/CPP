@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:29:50 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/15 13:41:52 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/07/25 13:41:55 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ class PhoneBook
     int count;
     void add_contact(Contact contact);
     void search_contact(int index); 
-    void print_book();
-    //no hace falta el array de contactos, ya esta dentro de PhoneBook
+    void print_book(); //no hace falta pasar el array de contactos, ya esta dentro de PhoneBook
 };
 
 #endif

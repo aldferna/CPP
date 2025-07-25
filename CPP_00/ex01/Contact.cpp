@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:29:22 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/15 13:46:55 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/07/25 13:39:03 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,5 @@ void Contact::set_data(std::string name, std::string last_name,
     this->phone = phone;
     this->secret = secret;
 }
-//no necesito devolver contact porque estoy configurando el propio objto, que sera
+//no necesito devolver contact porque estoy configurando el propio objto, que será
 // contacts[index] = contact;

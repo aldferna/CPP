@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:29:47 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/15 13:46:10 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/07/25 13:38:08 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Contact
     void set_data(std::string name, std::string last_name, std::string nickname, 
         std::string phone, std::string secret);
     void print_all();
-    std::string get_name() const;
+    std::string get_name() const; //const: método q no va a modificar ningún atributo del objeto
     std::string get_last_name() const;
     std::string get_nickname() const;
 };

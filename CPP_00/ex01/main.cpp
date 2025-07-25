@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:47:02 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/15 13:57:21 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/07/25 13:52:02 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int main ()
     int index;
 
     std::cout << "Possible commands: ADD, SEARCH or EXIT" << std::endl;
-    std::cin >> command; //deja el salto de línea (\n) en el buffer.
+    std::cin >> command; //cin deja el salto de línea (\n) en el buffer.
     std::cin.ignore();
     
     phonebook.count = 0;
@@ -60,8 +60,8 @@ int main ()
         if (command == "ADD")
         {
             get_input(data); //a continuacion: llamar a metodo sobre objeto
-            c.set_data(data[0], data[1], data[2], data[3], data[4]); //c = set_data; que devulve contact
-            phonebook.add_contact(c); //son funciones del obejto no main a traves del .h
+            c.set_data(data[0], data[1], data[2], data[3], data[4]); //c = set_data; como que 'devulve' contact
+            phonebook.add_contact(c); //son funciones del objeto (metodos) no llamads a traves del .h
             std::cout << "Your contact was added!" << std::endl;
         }
         else if (command == "SEARCH")

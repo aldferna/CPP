@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:29:26 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/15 13:36:04 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/07/25 13:48:28 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void PhoneBook::print_book()
             << std::endl;
         //truncate(PhoneBook[i].get_last_name()) -> no puedo hacere sto porque PhoneBook es un objeto,
         //tengo que acceder al array que tiene ese objeto asi: this->contacts (el array del objeto)
+        //en realidad este this-> se usa solo si hay ambiguedad, como en el metodo "add contact"
         i++;
     }
 }
