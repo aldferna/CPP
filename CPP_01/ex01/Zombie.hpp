@@ -5,13 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/25 14:03:29 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 15:45:39 by adrianafern      ###   ########.fr       */
+/*   Created: 2025/07/25 15:20:26 by adrianafern       #+#    #+#             */
+/*   Updated: 2025/07/25 15:58:28 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* 
-newZombie.cpp, randomChump.cpp: son funciones auxiliares, no clases.*/
 
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
@@ -23,21 +20,16 @@ class Zombie
 {
     public:
         void announce( void ) const;
+        void set_name(std::string name); //cd usas el constructor por defecto
 
         Zombie(std::string name);
+        Zombie(); //constructor por defecto → para crear arrays de objetos en el heap (new Zombie[N])
         ~Zombie();
     
     private:
         std::string name;
 };
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+Zombie* zombieHorde( int N, std::string name );
 
 #endif
-
-/* newZombie y randomChump no son métodos del objeto Zombie, 
-son funciones independientes fuera de la clase.
-Es decir: no necesitas un objeto Zombie para llamarlas. 
-
-announce()	Sí porque imprime el nombre del zombi*/
