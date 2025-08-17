@@ -6,12 +6,9 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 14:03:29 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 15:45:39 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/17 19:50:02 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* 
-newZombie.cpp, randomChump.cpp: son funciones auxiliares, no clases.*/
 
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP

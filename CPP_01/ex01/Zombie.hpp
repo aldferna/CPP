@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 15:20:26 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 15:58:28 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/17 19:57:37 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ class Zombie
         void announce( void ) const;
         void set_name(std::string name); //cd usas el constructor por defecto
 
-        Zombie(std::string name);
         Zombie(); //constructor por defecto → para crear arrays de objetos en el heap (new Zombie[N])
         ~Zombie();
     

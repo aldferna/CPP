@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 15:21:38 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 16:55:29 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/17 19:57:30 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,6 @@ void Zombie::announce() const
 }
 
 void Zombie::set_name(std::string name)
-{
-    this->name = name;
-}
-
-Zombie::Zombie(std::string name)
 {
     this->name = name;
 }

@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 15:52:15 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 16:57:25 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/17 19:53:08 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,7 @@ int main ()
     horde = zombieHorde(index, "zombi");
     for (int i = 0; i < index; i++)
         horde[i].announce();
-    //for (int i = 0; i< index; i++)
     delete[] horde;
 }
 
-//Esto es un error porque horde[i] no es un puntero. Es un objeto, 
-//y tú no hiciste new para cada zombi individual.
+//horde[i] no es un puntero. Es un objeto, no hice new para cada zombi individual.

@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:29:26 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 13:48:28 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/17 20:50:01 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void PhoneBook::add_contact(Contact contact)
 
 std::string truncate(const std::string str)
 {
-    std::string news;
+    std::string news; //esto???
 
     if (str.length() > 10)
         return (str.substr(0, 9) + ".");

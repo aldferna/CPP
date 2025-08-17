@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 14:10:42 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/07/25 15:46:01 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/17 19:52:14 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void Zombie::announce() const
 {
     std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
-
-//"This function (newZombie) creates a zombie" -> entonces: hay que hacer un constructor
 
 Zombie::Zombie(std::string name)
 {
