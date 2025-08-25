@@ -6,7 +6,7 @@
 /*   By: adrianafernandez <adrianafernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 20:48:48 by adrianafern       #+#    #+#             */
-/*   Updated: 2025/08/24 21:17:16 by adrianafern      ###   ########.fr       */
+/*   Updated: 2025/08/25 21:39:57 by adrianafern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@ class HumanB
         HumanB(std::string name);
         ~HumanB();
         void attack();
-        void setWeapon(Weapon B);
+        void setWeapon(Weapon &B);
         const std::string& getWeapon() const;
+        const std::string& getName() const;
     private:
-        Weapon B;
+        Weapon *B;
         std::string name;
 };
